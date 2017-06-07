@@ -2,21 +2,21 @@
 # Distributed under the MIT/X11 software license, see the accompanying
 # file license.txt or http://www.opensource.org/licenses/mit-license.php.
 
-DEPSDIR:=/usr/i586-mingw32msvc
+DEPSDIR:=/usr/
 
 USE_UPNP:=0
 
-INCLUDEPATHS= \
- -I"$(DEPSDIR)/boost_1_49_0" \
- -I"$(DEPSDIR)/db-4.8.30.NC/build_unix" \
- -I"$(DEPSDIR)/openssl-1.0.1b/include" \
+#INCLUDEPATHS= \
+ -I"$(DEPSDIR)/lib \
+ -I"$(DEPSDIR)/lib" \
+ -I"$(DEPSDIR)/include" \
  -I"$(DEPSDIR)" \
  -I"$(CURDIR)"/obj \
 
-LIBPATHS= \
- -L"$(DEPSDIR)/boost_1_49_0/stage/lib" \
- -L"$(DEPSDIR)/db-4.8.30.NC/build_unix" \
- -L"$(DEPSDIR)/openssl-1.0.1b"
+#LIBPATHS= \
+ -L"$(DEPSDIR)/lib" \
+ -L"$(DEPSDIR)/lib" \
+ -L"$(DEPSDIR)/lib"
 
 LIBS= \
  -l boost_system-mt-s \
